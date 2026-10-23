@@ -1,3 +1,0 @@
-{"example_only": true, "run_id": "synthetic_split_check", "event": "tool_requested", "tool": "validate_patient_split", "decision_summary": "训练前核查患者划分", "inputs": {"manifest_path": "synthetic_manifest.csv"}}
-{"example_only": true, "run_id": "synthetic_split_check", "event": "tool_result", "tool": "validate_patient_split", "status": "blocked", "patient_overlap": 1, "error_code": "PATIENT_SPLIT_OVERLAP"}
-{"example_only": true, "run_id": "synthetic_split_check", "event": "run_stopped", "reason": "未修改 split；未启动训练；等待研究者检查输入"}
