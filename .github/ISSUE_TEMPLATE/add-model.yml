@@ -1,0 +1,54 @@
+name: 提交新病理特征提取器 / Add a pathology encoder
+description: 建议新增或修正病理 Patch / WSI 表征模型条目。
+title: "[Model] "
+labels: ["model-entry"]
+body:
+  - type: input
+    id: model-name
+    attributes:
+      label: 模型名称与版本 / Model and version
+      placeholder: Example: UNI2-h
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: 特征级别 / Feature level
+      options:
+        - Patch / Tile
+        - WSI / Slide
+    validations:
+      required: true
+  - type: input
+    id: paper
+    attributes:
+      label: 论文或官方模型卡 / Paper or official model card
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: weights
+    attributes:
+      label: 官方权重或访问申请入口 / Weights
+      placeholder: https://huggingface.co/...
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: 官方代码 / Code
+      placeholder: https://github.com/...
+  - type: input
+    id: dimension
+    attributes:
+      label: 特征维度 + 定义 / Dimension and pooling definition
+      placeholder: "1024 (CLS token)"
+    validations:
+      required: true
+  - type: textarea
+    id: modalities
+    attributes:
+      label: 推理模态、预训练模态及限制 / Modalities and constraints
+      description: 请注明倍率、Patch 尺寸、上游编码器、权限和已验证依据。
+    validations:
+      required: true
