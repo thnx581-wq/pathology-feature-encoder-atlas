@@ -1,0 +1,11 @@
+{
+  "review_date": "2026-09-17",
+  "scope": "Only author pages / official README; not a whole-code audit, installed environment, or reproduction.",
+  "upstream_workflow_commit": "14c882df49a7991b9833f2ff416e4dfd38668827",
+  "README_blob_shas": {
+    "Pureeeee/PathNavigate_": "6e81c18b2db1f7fab70fbac3fc18eceedb2c2c10",
+    "zhexu1997/PathPocket": "0b75b7996bba8eed0df78a5475f4011455ee6733",
+    "jaylinio/ACP-Bench": "126f3530808a7aec2940f97e4f9c65a1a4eb6451"
+  },
+  "note": "README blob hashes are not repository commit hashes. AHE README read, no hash recorded. Binary papers not locally archived."
+}
